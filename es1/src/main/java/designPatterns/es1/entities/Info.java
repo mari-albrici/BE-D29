@@ -1,16 +1,21 @@
 package designPatterns.es1.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@ToString
 public class Info {
     private String nome;
     private String cognome;
-    private Date dataDiNascita;
+    private LocalDate dataDiNascita;
     public String getNome() {
         return nome;
     }
@@ -23,10 +28,10 @@ public class Info {
     public void setCognome(String cognome) {
         this. cognome = cognome;
     }
-    public Date getDataDiNascita() {
+    public LocalDate getDataDiNascita() {
         return dataDiNascita;
     }
-    public void DataDiNascita (Date dataDiNascita) {
+    public void DataDiNascita (LocalDate dataDiNascita) {
         this. dataDiNascita = dataDiNascita;
     }
 }
