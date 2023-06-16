@@ -24,9 +24,8 @@ public class Es1Application {
 		user.setNomeCompleto(Adapter.getNomeCompletoDaInfo(a));
 		user.setEta(Adapter.getEtaDaInfo(a));
 
+		System.out.println(a);
 		System.out.println(user);
-
-		System.out.println(a.getDataDiNascita());
 	}
 
 }
